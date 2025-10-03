@@ -1,0 +1,17 @@
+html {
+	--standard-inner-column: 1350px;
+	--tight-inner-column: 800px;
+
+	--grey: #616161;
+	--lightgrey: #dcdcdc;
+	--xtra-lightgrey: #d9d9d9;
+	--blue: #3d72e2;
+	--darkblue: #2f55db;
+	--white: #FFFFFF;
+
+	--border: 0px;
+	--corners: 4px;
+
+	--small-border-radius: 5px;
+	--large-border-radius: 85px;
+}

@@ -1,0 +1,56 @@
+.review-form {
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 400px;
+
+	textarea {
+		border: 1px solid var(--lightgrey);
+		resize: none;
+		border-radius: 5px;
+	}
+
+	input {
+		border: 1px solid var(--lightgrey);
+		padding: 10px;
+		border-radius: 5px;
+	}
+}
+
+label.required:after {
+  content: " *"; 
+  color: red;
+}
+
+.required {
+	font-size: 1rem;
+	font-weight: 500;
+	color: #333333;
+}
+
+.loud-voice {
+	font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+.form-btn {
+	background-color: var(--blue);
+	padding: 1em;
+	border: none;
+	border-radius: 30px;
+	color: var(--white);
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.image-area {
+	border: 1px solid var(--lightgrey);
+	padding: 25px;
+	border-radius: 5px;
+
+	select {
+		margin-left: -23px;
+		height: 40px;
+}
+}
+

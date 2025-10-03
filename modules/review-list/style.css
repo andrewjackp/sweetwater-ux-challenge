@@ -1,0 +1,6 @@
+.review-card-list {
+	display: grid;
+	grid-template-columns: 1fr;
+	padding: 10px;
+	gap: 1em;
+}

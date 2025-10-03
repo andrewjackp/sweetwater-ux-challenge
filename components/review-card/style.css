@@ -1,0 +1,94 @@
+.review-card {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	gap: 10px;
+	container-type: inline-size;
+	
+	picture {
+		width: 80px;
+		object-fit: cover;
+		flex-shrink: 0;
+	}
+	img {
+		border-radius: 8px;
+	}
+	
+	.title {
+		font-size: 1.3rem;
+		font-weight: 500;
+	}
+	
+	.user {
+		color: var(--grey);
+		font-weight: 400;
+		font-size: 0.9rem;
+	}
+	
+	.description {
+		line-height: 1.4em;
+		max-width: 150ch;
+	}
+	
+	.title + .starRating {
+		margin-top: 0.5em;	
+	}
+	
+	.starRating + .description {
+		margin-top: 1em;
+	}
+	
+	.description + .user {
+		margin-top: 1.3em;
+	}
+	
+	.user + picture {
+		margin-top: 1.2em;
+	}
+	
+	.toggle-btn {
+		display: none;
+	}
+
+	.starRating {
+		display: flex;
+		flex-direction: row;
+		width: 18%;
+		margin-left: -4px;
+
+		svg {
+			width: 25px; 
+  			height: 25px;
+  			flex-shrink: 0; 
+		}
+	}
+	
+	.description {
+		max-width: 100ch;
+		display: -webkit-box;
+ 		-webkit-box-orient: vertical;
+ 		overflow: hidden;
+ 		text-overflow: ellipsis;		
+	}
+	
+	@container (width < 500px) {
+		.description {
+			-webkit-line-clamp: 2;
+		}
+		.toggle-btn {
+			display: block;
+			max-width: 120px;
+			background: none;
+			color: var(--blue);
+			display: flex;
+         align-items: flex-start;
+         border: none;
+         margin-left: -6px;
+		}
+	}
+}
+
+
+.toggle-btn:hover {
+	cursor: pointer;
+}
